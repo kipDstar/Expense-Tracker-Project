@@ -1,26 +1,26 @@
 import React from 'react';
 
-function ExpenseTable({ expenses }) {
-    return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Description</th>
-                    <th>Category</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
-            <tbody>
-                {expenses.map((expense, index) => (
-                    <tr key={index}>
-                        <td>{expense.description}</td>
-                        <td>{expense.category}</td>
-                        <td>${expense.amount}</td>
-                    </tr>
-                ))}
-            </tbody>
-        </table>
-    );
+function ExpensesTable({ expenses }) {
+  return (
+    <div className="expenses-table-container">
+      <table className="expenses-table">
+        <thead>
+          <tr>
+            <th>Expense</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {expenses.map((expense, index) => (
+            <tr key={index}>
+              <td>{expense.category}</td>
+              <td>{expense.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
-export default ExpenseTable;
+export default ExpensesTable;
