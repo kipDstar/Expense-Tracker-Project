@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ExpensesTable from '/home/jesse/Development/code/Phase-2/code-challenges/expense-tracker/src/components/ExpenseTable.jsx';
 import ExpenseForm from '/home/jesse/Development/code/Phase-2/code-challenges/expense-tracker/src/components/ExpenseForm.jsx';
 import SearchBar from '/home/jesse/Development/code/Phase-2/code-challenges/expense-tracker/src/components/SearchBar.jsx';
-import './App.css';
+import '/home/jesse/Development/code/Phase-2/code-challenges/expense-tracker/src/App.css';
 
 function App() {
   const [expenses, setExpenses] = useState([]);
