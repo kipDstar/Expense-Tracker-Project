@@ -15,29 +15,31 @@ function ExpenseForm({ onAddExpense }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="expense-form" onSubmit={handleSubmit}>
+      <h2>Add Expense</h2>
+      <p>Enter your expense details below</p>
       <input
         type="text"
-        placeholder="Description"
+        placeholder="Enter expense description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         required
       />
       <input
         type="text"
-        placeholder="Category"
+        placeholder="Enter expense category"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
         required
       />
       <input
         type="number"
-        placeholder="Amount"
+        placeholder="Enter amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         required
       />
-      <button type="submit">Add Expense</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
