@@ -19,11 +19,18 @@ function App() {
   );
 
   return (
-    <div>
-      <h1>Expense Tracker</h1>
-      <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-      <ExpenseForm onAddExpense={handleAddExpense} />
-      <ExpensesTable expenses={filteredExpenses} />
+    <div className="app-container">
+      <header>
+        <h1>Expense Tracker</h1>
+        <p>Start taking control of your finances and life. Record, categorize, and analyze your spending.</p>
+      </header>
+      <main>
+        <div className="form-and-search">
+          <ExpenseForm onAddExpense={handleAddExpense} />
+          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+        </div>
+        <ExpensesTable expenses={filteredExpenses} />
+      </main>
     </div>
   );
 }
