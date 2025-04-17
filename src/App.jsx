@@ -16,11 +16,19 @@ function App() {
     setExpenses(expenses.filter((_, index) => index !== indexToDelete));
   };
 
-  const filteredExpenses = expenses.filter(
+  /*const filteredExpenses = expenses.filter(
     (expense) =>
       expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
       expense.category.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  );*/
+  // Filter expenses based on search term
+  const filteredExpenses = expenses.filter((expense) => {
+    const searchTermLower = searchTerm.toLowerCase();
+    return (
+      expense.description.toLowerCase().includes(searchTermLower) ||
+      expense.category.toLowerCase().includes(searchTermLower)
+    );
+  });
 
   return (
     <div className="app-container">

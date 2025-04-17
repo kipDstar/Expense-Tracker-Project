@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ExpensesTable({ expenses }) {
+function ExpensesTable({ expenses, onDeleteExpense }) {
   return (
     <div className="expenses-table-container">
       <table className="expenses-table">
@@ -8,6 +8,7 @@ function ExpensesTable({ expenses }) {
           <tr>
             <th>Expense</th>
             <th>Description</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -15,6 +16,11 @@ function ExpensesTable({ expenses }) {
             <tr key={index}>
               <td>{expense.category}</td>
               <td>{expense.description}</td>
+              <td>
+                <button onClick={() => onDeleteExpense(index)} className="delete-button">
+                  Delete
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

@@ -46,6 +46,12 @@ header p {
 
 .expense-form h2 {
   margin-bottom: 5px;
+  color:#007bff
+}
+
+.expense-form p {
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .expense-form input,
