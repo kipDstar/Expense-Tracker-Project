@@ -12,6 +12,10 @@ function App() {
     setExpenses([...expenses, newExpense]);
   };
 
+  const handleDeleteExpense = (indexToDelete) => {
+    setExpenses(expenses.filter((_, index) => index !== indexToDelete));
+  };
+
   const filteredExpenses = expenses.filter(
     (expense) =>
       expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -29,7 +33,7 @@ function App() {
           <ExpenseForm onAddExpense={handleAddExpense} />
           <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
         </div>
-        <ExpensesTable expenses={filteredExpenses} />
+        <ExpensesTable expenses={filteredExpenses} onDeleteExpense={handleDeleteExpense} />
       </main>
     </div>
   );

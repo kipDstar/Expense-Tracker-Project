@@ -26,11 +26,8 @@ Follow these instructions to set up and run the project locally.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/expense-tracker.git
+   git clone https://github.com/kipDstar/expense-tracker.git
    cd expense-tracker
-Here’s a complete and polished README.md file for your project:
-
-```markdown
 # Expense Tracker
 
 A simple React-based expense tracker application built with Vite. This app allows users to manage their expenses by adding, viewing, and filtering expenses in a responsive and user-friendly interface.
@@ -45,11 +42,10 @@ A simple React-based expense tracker application built with Vite. This app allow
 ## Screenshot
 
 ![App Screenshot](./public/screenshot.png)  
-*Replace `./public/screenshot.png` with the actual path to your screenshot.*
 
 ## Getting Started
 
-Follow these instructions to set up and run the project locally.
+Follow these instructions to set up and run the project locally:
 
 ### Prerequisites
 
@@ -59,25 +55,25 @@ Follow these instructions to set up and run the project locally.
 ### Installation
 
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/<your-username>/expense-tracker.git
    cd expense-tracker
-   ```
+   
 
 2. Install dependencies:
-   ```bash
+   
    npm install
-   ```
+  
 
 3. Start the development server:
-   ```bash
+  
    npm run dev
-   ```
+   
 
 4. Open the app in your browser:
-   ```
+  
    http://localhost:5173
-   ```
+   
 
 ## Usage
 
@@ -86,8 +82,6 @@ Follow these instructions to set up and run the project locally.
 3. **View Expenses**: All expenses are displayed in a table format showing the expense name and description.
 
 ## Project Structure
-
-```
 expense-tracker/
 ├── public/                 # Static assets (e.g., screenshots, vite.svg)
 ├── src/
@@ -110,14 +104,14 @@ This app can be deployed on platforms like [Vercel](https://vercel.com/), [Netli
 ### Example Deployment Steps (Vercel)
 
 1. Install the Vercel CLI:
-   ```bash
+   
    npm install -g vercel
-   ```
+  
 
 2. Deploy the app:
-   ```bash
+   
    vercel
-   ```
+   
 
 3. Follow the prompts to complete the deployment.
 
