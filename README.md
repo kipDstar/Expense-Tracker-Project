@@ -25,40 +25,9 @@ Follow these instructions to set up and run the project locally.
 ### Installation
 
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/kipDstar/expense-tracker.git
    cd expense-tracker
-# Expense Tracker
-
-A simple React-based expense tracker application built with Vite. This app allows users to manage their expenses by adding, viewing, and filtering expenses in a responsive and user-friendly interface.
-
-## Features
-
-- **View Expenses**: Displays a table of all expenses with details such as description, category, and amount.
-- **Add Expenses**: A form to add new expenses dynamically.
-- **Search Expenses**: A search bar to filter expenses by description or category.
-- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
-
-## Screenshot
-
-![App Screenshot](./public/screenshot.png)  
-
-## Getting Started
-
-Follow these instructions to set up and run the project locally:
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or later)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-### Installation
-
-1. Clone the repository:
-   
-   git clone https://github.com/<your-username>/expense-tracker.git
-   cd expense-tracker
-   
 
 2. Install dependencies:
    
